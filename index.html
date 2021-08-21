@@ -11,73 +11,104 @@
 </head>
 
 <body>
+    <header>
+
+    </header>
     <!-- main part start -->
     <main>
         <section>
             <div class="grid grid-cols-2 gap-4">
+                <!-- image part -->
                 <div>
                     <img class="w-3/4 mx-auto" src="images/mac.png" alt="">
                 </div>
-
+                <!-- image part -->
                 <div class="mx-auto">
+                    <!-- short description  -->
                     <div>
-                        <h2 class=" font-semibold text-5xl">Customize your Blue 24-inch iMac with Apple M1 chip.</h2>
+                        <h2 class=" font-semibold text-5xl ">Customize your Blue 24-inch iMac with Apple M1 chip.</h2>
                         <p class=" mt-4">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard - US English</p>
                     </div>
+                    <!-- short description -->
+
+                    <!-- memory segment start  -->
                     <div class="mt-10">
                         <h5 class="font-bold mb-2">Memory</h5>
-                        <button id="8gb-btn" class="hover:bg-black hover:text-white  px-4 rounded py-2 text-black bg-white border border-black">8GB unified memory</button>
-                        <button id="16gb-btn" class="hover:bg-black hover:text-white px-4 rounded py-2 text-black bg-white border border-black">16GB unified memory</button>
+                        <button id="memory-8gb-btn" class="hover:bg-black hover:text-white  px-4 rounded py-2 text-black bg-white border border-black">8GB unified memory</button>
+                        <button id="memory-16gb-btn" class="hover:bg-black hover:text-white px-4 rounded py-2 text-black bg-white border border-black">16GB unified memory</button>
                     </div>
+                    <!-- memory segment end  -->
+
+                    <!-- storage section start  -->
                     <div class="mt-10">
                         <h5 class="font-bold mb-2">Storage</h5>
-                        <button id="8gb-btn" class="hover:bg-black hover:text-white  px-4 rounded py-2 text-black bg-white border border-black">256GB SSD storage</button>
-                        <button id="16gb-btn" class="hover:bg-black hover:text-white px-4 rounded py-2 text-black bg-white border border-black">512GB SSD storage</button>
-                        <button id="16gb-btn" class="hover:bg-black hover:text-white px-4 rounded py-2 text-black bg-white border border-black">1TB SSD storage</button>
+                        <button id="storage-256gb-btn" class="hover:bg-black hover:text-white  px-4 rounded py-2 text-black bg-white border border-black">256GB SSD storage</button>
+                        <button id="storage-512gb-btn" class="hover:bg-black hover:text-white px-4 rounded py-2 text-black bg-white border border-black">512GB SSD storage</button>
+                        <button id="storage-1tb-btn" class="hover:bg-black hover:text-white px-4 rounded py-2 text-black bg-white border border-black">1TB SSD storage</button>
                     </div>
+                    <!-- storage section end  -->
+
+                    <!-- delivery section  -->
                     <div class="mt-10">
                         <h5 class="font-bold mb-2">Choose your delivery option</h5>
-                        <button id="8gb-btn" class="hover:bg-black hover:text-white  px-4 rounded py-2 text-black bg-white border border-black">Friday, Aug 25 FREE Prime Delivery</button>
-                        <button id="16gb-btn" class="hover:bg-black hover:text-white px-4 rounded py-2 text-black bg-white border border-black">Friday, Aug 21 Delivery Charge $20</button>
+                        <button id="free-delivery-btn" class="hover:bg-black hover:text-white  px-4 rounded py-2 text-black bg-white border border-black">Friday, Aug 25 FREE Prime Delivery</button>
+                        <button id="premium-delivery-btn" class="hover:bg-black hover:text-white px-4 rounded py-2 text-black bg-white border border-black">Friday, Aug 21 Delivery Charge $20</button>
                     </div>
+                    <!-- delivery section  -->
+
+                    <!-- total price section start -->
                     <div class="mt-12 my-4">
                         <div class="my-2 flex justify-between w-2/5">
                             <h5 class="font-bold mb-2">Best Price</h5>
-                            <h5 class="font-bold mb-2">$<span>1299</span></h5>
+                            <h5 class="font-bold mb-2">$<span id="basic-total">1299</span></h5>
                         </div>
                         <hr class="w-2/5">
                         <div class="my-2 flex justify-between w-2/5">
                             <h5 class="font-bold mb-2">Extra Memory Cost</h5>
-                            <h5 class="font-bold mb-2">$<span>0</span></h5>
+                            <h5 class="font-bold mb-2">$<span id="memory-cost">0</span></h5>
                         </div>
                         <hr class="w-2/5">
                         <div class="my-2 flex justify-between w-2/5">
                             <h5 class="font-bold mb-2">Extra Storage Cost</h5>
-                            <h5 class="font-bold mb-2">$<span>0</span></h5>
+                            <h5 class="font-bold mb-2">$<span id="storage-cost">0</span></h5>
                         </div>
                         <hr class="w-2/5">
                         <div class="my-2 flex justify-between w-2/5">
                             <h5 class="font-bold mb-2">Delivery charge</h5>
-                            <h5 class="font-bold mb-2">$<span>0</span></h5>
+                            <h5 class="font-bold mb-2">$<span id="delivery-cost">0</span></h5>
                         </div>
                         <hr class="w-2/5 border border-black">
                         <div class="my-2 flex justify-between w-2/5">
                             <h5 class="font-bold mb-2">Total Price</h5>
-                            <h5 class="font-bold mb-2">$<span>1299</span></h5>
+                            <h5 class="font-bold mb-2">$<span id="total-cost">1299</span></h5>
                         </div>
                         <hr class="w-2/5">
+                        <!-- total price section -->
+
+                        <!-- Coupon Code for discount price -->
                         <div class="my-4">
                             <h5 class="font-semibold mb-2">Add Promo Code</h5>
-                            <input class="border px-4 py-2" type="text">
-                            <button class="px-4 rounded py-2 text-white bg-red-600">Apply</button></div>
+                            <div class="d-flex">
+                                <input id="coupon-code" type="text" placeholder="Enter Your Coupon Code" class=" rounded border px-4 py-2"> <button id="apply-btn" class="px-4 rounded py-2 text-white bg-red-600">Apply</button>
+                            </div>
+                        </div>
+                        <!-- Coupon Code for discount price -->
                     </div>
                 </div>
             </div>
+            </div>
         </section>
-        <hr>
-        <h2 class=" font-semibold text-5xl text-center mt-5">Total: $<span id=""></span>1299</h2>
     </main>
     <!-- main part end -->
+
+    <!-- footer part start  -->
+
+
+    <footer>
+        <hr>
+        <h2 class=" font-semibold text-5xl text-center mt-5">Total: $<span id="deduct-total">1299</span></h2>
+    </footer>
+    <!-- footer part end  -->
 
     <!-- js file link  -->
     <script src="js/dom-event.js"></script>
